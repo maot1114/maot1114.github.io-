@@ -1,7 +1,164 @@
-<html>
-    <head></head>
-    <body>
-        <p>Hello, World!</p>
-        <p>My name is Maria</p> <!-- Change NAME to your name! -->
-    </body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maria O — Digital Identity Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary Navigation">
+      <a class="brand" href="#home">Maria O</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Creative Technology &amp; Design</h1>
+        <p>
+          I am a Senior Student at the Univeraity of Colorado Boulder studying Creative Technology and Design Engineering exploring the
+          intersection of web design, interactive systems, and physical computing.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button" href="#projects">View Projects</a>
+          <a class="button ghost" href="#about">Learn More</a>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Quick facts about Maria O">
+        <h2 class="sr-only">Quick Facts</h2>
+        <ul class="facts">
+          <li><span class="label">Focus:</span> accessible, responsive design</li>
+          <li><span class="label">Interests:</span> web, hardware, interaction design</li>
+          <li><span class="label">Approach:</span> clear layouts with meaningful visuals</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <p class="section-intro">
+        These projects represent my interests in design, interaction,
+        web development, and creative technology.
+      </p>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>EchoBand</h3>
+          <p>
+            EchoBand is a wearable project inspired by echolocation and sensory feedback.
+            It explores how technology can communicate spatial information through vibration.
+          </p>
+          <ul class="bullets">
+            <li>Wearable interaction concept</li>
+            <li>Distance sensing and haptic response</li>
+            <li>Focus on comfort and usability</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Mood Fan</h3>
+          <p>
+            Mood Fan is an environmental sensing project that uses an Arduino,
+            a temperature and humidity sensor, and NeoPixels to provide visual
+            and functional feedback.
+          </p>
+          <ul class="bullets">
+            <li>Sensor-based system</li>
+            <li>Color states for environmental changes</li>
+            <li>3D-printed enclosure improvements</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Web Design Labs</h3>
+          <p>
+            My HTML and CSS work includes responsive layouts, navigation systems,
+            accessibility practice, and visual styling using flexbox, grid,
+            animation, and special effects.
+          </p>
+          <ul class="bullets">
+            <li>Flexbox and grid layout</li>
+            <li>Responsive structure</li>
+            <li>Accessible design decisions</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="table-wrap" role="region" aria-label="Tools and skills table" tabindex="0">
+        <table>
+          <caption class="sr-only">Tools and skills used in projects</caption>
+          <thead>
+            <tr>
+              <th scope="col">Category</th>
+              <th scope="col">Examples</th>
+              <th scope="col">Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">HTML</th>
+              <td>semantic elements, links, forms, tables</td>
+              <td>structure and meaning</td>
+            </tr>
+            <tr>
+              <th scope="row">CSS</th>
+              <td>flexbox, grid, media queries, effects</td>
+              <td>layout and visual identity</td>
+            </tr>
+            <tr>
+              <th scope="row">Creative Tech</th>
+              <td>Arduino, sensors, prototyping</td>
+              <td>interactive systems</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+
+      <div class="two-col">
+        <div class="note">
+          <h3>Who I Am</h3>
+          <p>
+            I am a Creative Technology and Design student with interests in web
+            development, wearable technology, and interactive systems. My work often
+            combines visual design with hands-on experimentation.
+          </p>
+          <p>
+            I enjoy learning how digital identity can be communicated through layout,
+            typography, color, and structure. For me, design is not only about how
+            something looks, but also about how clearly it communicates and how
+            comfortably people can use it.
+          </p>
+        </div>
+
+        <aside class="note" aria-label="Accessibility notes">
+          <h3>Accessibility Notes</h3>
+          <ul class="bullets">
+            <li>Semantic HTML for better structure</li>
+            <li>Visible focus states for keyboard users</li>
+            <li>Responsive layout for smaller screens</li>
+            <li>Readable color contrast and spacing</li>
+          </ul>
+        </aside>
+      </div>
+
+  <footer class="site-footer">
+    <p>© 2026 Maria O | Digital Identity Portfolio</p>
+  </footer>
+</body>
 </html>
