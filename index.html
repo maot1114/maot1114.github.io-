@@ -1,164 +1,213 @@
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Maria O — Digital Identity Portfolio</title>
+  <meta name="description" content="Portfolio of Maria Otero, a Creative Technology & Design professional specializing in UX/UI, motion design, interaction design, prototyping, and product development.">
+  <title>Maria Otero | Creative Technology & Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <nav class="nav" aria-label="Primary Navigation">
-      <a class="brand" href="#home">Maria O</a>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Maria Otero home">MO<span>.</span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#work">Work</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="main">
     <section id="home" class="hero">
-      <div class="hero-text">
-        <h1>Creative Technology &amp; Design</h1>
-        <p>
-          I am a Senior Student at the Univeraity of Colorado Boulder studying Creative Technology and Design Engineering exploring the
-          intersection of web design, interactive systems, and physical computing.
+      <div class="hero-copy">
+        <p class="eyebrow">Creative Technology · UX/UI · Motion · Product Design</p>
+        <h1>I create thoughtful experiences where <span>creativity, technology, and empathy</span> meet.</h1>
+        <p class="hero-intro">
+          I’m Maria Otero, a Creative Technology &amp; Design graduate based in Broomfield, Colorado. I design intuitive digital and physical experiences through research, visual storytelling, interaction design, and hands-on prototyping.
         </p>
-
         <div class="hero-actions">
-          <a class="button" href="#projects">View Projects</a>
-          <a class="button ghost" href="#about">Learn More</a>
+          <a class="button" href="#work">Explore my work</a>
+          <a class="button button-secondary" href="Maria_E_Otero_Resume_Updated.pdf" target="_blank" rel="noopener">View résumé</a>
         </div>
-      </div>
-
-      <aside class="hero-card" aria-label="Quick facts about Maria O">
-        <h2 class="sr-only">Quick Facts</h2>
-        <ul class="facts">
-          <li><span class="label">Focus:</span> accessible, responsive design</li>
-          <li><span class="label">Interests:</span> web, hardware, interaction design</li>
-          <li><span class="label">Approach:</span> clear layouts with meaningful visuals</li>
+        <ul class="hero-details" aria-label="Professional details">
+          <li>Open to creative and design opportunities</li>
+          <li>Bilingual: English &amp; Spanish</li>
+          <li>Authorized to work in the U.S.</li>
         </ul>
-      </aside>
-    </section>
-
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <p class="section-intro">
-        These projects represent my interests in design, interaction,
-        web development, and creative technology.
-      </p>
-
-      <div class="card-grid">
-        <article class="card">
-          <h3>EchoBand</h3>
-          <p>
-            EchoBand is a wearable project inspired by echolocation and sensory feedback.
-            It explores how technology can communicate spatial information through vibration.
-          </p>
-          <ul class="bullets">
-            <li>Wearable interaction concept</li>
-            <li>Distance sensing and haptic response</li>
-            <li>Focus on comfort and usability</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Mood Fan</h3>
-          <p>
-            Mood Fan is an environmental sensing project that uses an Arduino,
-            a temperature and humidity sensor, and NeoPixels to provide visual
-            and functional feedback.
-          </p>
-          <ul class="bullets">
-            <li>Sensor-based system</li>
-            <li>Color states for environmental changes</li>
-            <li>3D-printed enclosure improvements</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Web Design Labs</h3>
-          <p>
-            My HTML and CSS work includes responsive layouts, navigation systems,
-            accessibility practice, and visual styling using flexbox, grid,
-            animation, and special effects.
-          </p>
-          <ul class="bullets">
-            <li>Flexbox and grid layout</li>
-            <li>Responsive structure</li>
-            <li>Accessible design decisions</li>
-          </ul>
-        </article>
       </div>
 
-      <div class="table-wrap" role="region" aria-label="Tools and skills table" tabindex="0">
-        <table>
-          <caption class="sr-only">Tools and skills used in projects</caption>
-          <thead>
-            <tr>
-              <th scope="col">Category</th>
-              <th scope="col">Examples</th>
-              <th scope="col">Purpose</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">HTML</th>
-              <td>semantic elements, links, forms, tables</td>
-              <td>structure and meaning</td>
-            </tr>
-            <tr>
-              <th scope="row">CSS</th>
-              <td>flexbox, grid, media queries, effects</td>
-              <td>layout and visual identity</td>
-            </tr>
-            <tr>
-              <th scope="row">Creative Tech</th>
-              <td>Arduino, sensors, prototyping</td>
-              <td>interactive systems</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <h2>About Me</h2>
-
-      <div class="two-col">
-        <div class="note">
-          <h3>Who I Am</h3>
-          <p>
-            I am a Creative Technology and Design student with interests in web
-            development, wearable technology, and interactive systems. My work often
-            combines visual design with hands-on experimentation.
-          </p>
-          <p>
-            I enjoy learning how digital identity can be communicated through layout,
-            typography, color, and structure. For me, design is not only about how
-            something looks, but also about how clearly it communicates and how
-            comfortably people can use it.
-          </p>
+      <div class="hero-visual" aria-label="Portfolio introduction graphic">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="visual-card visual-card-main">
+          <p class="visual-label">Currently exploring</p>
+          <p class="visual-title">Human-centered products that connect digital design with real-world needs.</p>
         </div>
+        <div class="visual-card visual-card-small">
+          <span>UX/UI</span><span>Motion</span><span>Prototyping</span>
+        </div>
+      </div>
+    </section>
 
-        <aside class="note" aria-label="Accessibility notes">
-          <h3>Accessibility Notes</h3>
-          <ul class="bullets">
-            <li>Semantic HTML for better structure</li>
-            <li>Visible focus states for keyboard users</li>
-            <li>Responsive layout for smaller screens</li>
-            <li>Readable color contrast and spacing</li>
+    <section id="work" class="section projects-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects shaped by curiosity, research, and making.</h2>
+        </div>
+        <p>My work spans wearable technology, interaction design, motion graphics, responsive web experiences, and user-centered product development.</p>
+      </div>
+
+      <article class="featured-project project-card">
+        <div class="project-visual pawpulse-visual">
+          <span class="project-number">01</span>
+          <div class="device-shape"></div>
+          <div class="signal-line" aria-hidden="true">⌁⌁⌁</div>
+          <p>IMAGE PLACEHOLDER<br><small>Add PawPulse prototype photo or render</small></p>
+        </div>
+        <div class="project-content">
+          <p class="project-type">Featured case study · Product design · Wearable technology</p>
+          <h3>PawPulse</h3>
+          <p class="project-summary">A lightweight veterinary Holter monitoring system designed to improve comfort, ECG signal reliability, and clinical workflow for small-breed dogs and veterinary cardiology teams.</p>
+          <div class="project-meta">
+            <div><span>My role</span><p>Research, experience design, prototyping, visual communication</p></div>
+            <div><span>Methods</span><p>Expert interviews, iterative testing, wearable design, technical prototyping</p></div>
+          </div>
+          <ul class="tag-list" aria-label="PawPulse skills">
+            <li>User-centered design</li><li>Design research</li><li>Prototyping</li><li>Product development</li>
           </ul>
+          <a class="text-link" href="#contact">Case study coming soon <span>↗</span></a>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project-card compact-project">
+          <div class="project-visual motion-visual">
+            <span class="project-number">02</span>
+            <p>IMAGE / VIDEO PLACEHOLDER<br><small>Add motion-design still or GIF</small></p>
+          </div>
+          <div class="project-content">
+            <p class="project-type">Motion design · Visual storytelling</p>
+            <h3>Motion Design Collection</h3>
+            <p>Animated visual studies exploring composition, pacing, transitions, typography, and approachable storytelling.</p>
+            <ul class="tag-list"><li>After Effects</li><li>Storyboarding</li><li>Motion graphics</li></ul>
+          </div>
+        </article>
+
+        <article class="project-card compact-project">
+          <div class="project-visual echoband-visual">
+            <span class="project-number">03</span>
+            <p>IMAGE PLACEHOLDER<br><small>Add EchoBand prototype photo</small></p>
+          </div>
+          <div class="project-content">
+            <p class="project-type">Interaction design · Physical computing</p>
+            <h3>EchoBand</h3>
+            <p>A wearable interaction concept that translates distance information into haptic feedback through sensors and vibration patterns.</p>
+            <ul class="tag-list"><li>Interaction design</li><li>Wearable technology</li><li>Arduino</li></ul>
+          </div>
+        </article>
+
+        <article class="project-card compact-project">
+          <div class="project-visual web-visual">
+            <span class="project-number">04</span>
+            <p>SCREENSHOT PLACEHOLDER<br><small>Add web project screenshot</small></p>
+          </div>
+          <div class="project-content">
+            <p class="project-type">UX/UI · Responsive web design</p>
+            <h3>Interactive Web Experiences</h3>
+            <p>Responsive and accessible web projects focused on clear structure, playful interaction, and intuitive navigation.</p>
+            <ul class="tag-list"><li>UX/UI</li><li>HTML &amp; CSS</li><li>Accessibility</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="about-heading">
+        <p class="eyebrow">About me</p>
+        <h2>Great design happens when creativity, technology, and empathy come together to solve real problems.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>As a recent graduate with a Bachelor of Science in Creative Technology &amp; Design from the University of Colorado Boulder, I’ve developed experience in UX/UI, motion design, interaction design, prototyping, creative coding, and product development. I enjoy designing intuitive digital and physical experiences that are both functional and visually engaging.</p>
+          <p>Throughout my projects, I’ve explored everything from motion graphics and interactive experiences to websites, physical prototypes, and user-centered design. I’m passionate about learning new technologies, collaborating with multidisciplinary teams, and turning ideas into thoughtful, impactful solutions.</p>
+          <p>I’m seeking opportunities where I can contribute as a creative technologist, motion designer, UX/UI designer, or product designer while continuing to grow, learn, and create work that makes a meaningful impact.</p>
+        </div>
+        <aside class="experience-card">
+          <p class="experience-kicker">A perspective grounded in real work</p>
+          <h3>Design informed by empathy, communication, and complex workflows.</h3>
+          <p>My professional background in veterinary cardiology, customer service, and operations has strengthened my ability to understand users, communicate clearly, manage details, and design for real-world environments.</p>
+          <div class="mini-stat"><strong>5+ years</strong><span>of experience collaborating with clients and multidisciplinary teams</span></div>
         </aside>
       </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+      <div class="section-heading compact-heading">
+        <div><p class="eyebrow">Capabilities</p><h2>What I bring to a creative team.</h2></div>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <span>01</span><h3>Design &amp; Creative</h3>
+          <p>UX/UI Design · Visual Design · Motion Design · Experience Design · Interaction Design · Content Creation · Storyboarding · Presentation Design</p>
+        </article>
+        <article class="skill-card">
+          <span>02</span><h3>Product &amp; Research</h3>
+          <p>User-Centered Design · Design Research · Prototyping · Product Development · Wearable Technology · Creative Problem-Solving</p>
+        </article>
+        <article class="skill-card">
+          <span>03</span><h3>Tools</h3>
+          <p>Adobe Creative Suite · After Effects · Illustrator · Photoshop · Canva · Figma · Microsoft PowerPoint · HTML &amp; CSS</p>
+        </article>
+        <article class="skill-card">
+          <span>04</span><h3>Professional Strengths</h3>
+          <p>Visual Communication · Client Communication · Team Collaboration · Customer Experience · Organization · Technical Proficiency · Bilingual Communication</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <p class="eyebrow">Let’s connect</p>
+      <h2>I’m ready to bring thoughtful ideas to a creative team.</h2>
+      <p>I’m currently exploring entry-level opportunities in creative technology, motion design, UX/UI design, visual design, and product design.</p>
+      <div class="contact-actions">
+        <a class="button" href="mailto:meotero.94@gmail.com">Email me</a>
+        <a class="button button-secondary" href="Maria_E_Otero_Resume_Updated.pdf" target="_blank" rel="noopener">View résumé</a>
+        <a class="button button-secondary" href="#" aria-label="Add your LinkedIn URL here">LinkedIn</a>
+      </div>
+      <p class="contact-note">Replace the LinkedIn button’s <code>href="#"</code> with your profile URL before publishing.</p>
+    </section>
+  </main>
 
   <footer class="site-footer">
-    <p>© 2026 Maria O | Digital Identity Portfolio</p>
+    <p>© 2026 Maria Otero</p>
+    <p>Designed and built with care in Colorado.</p>
   </footer>
+
+  <script>
+    const menuButton = document.querySelector('.menu-button');
+    const navLinks = document.querySelector('.nav-links');
+    menuButton.addEventListener('click', () => {
+      const open = menuButton.getAttribute('aria-expanded') === 'true';
+      menuButton.setAttribute('aria-expanded', String(!open));
+      navLinks.classList.toggle('is-open');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('is-open');
+        menuButton.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
 </body>
 </html>
